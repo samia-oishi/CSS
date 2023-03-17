@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: dashed rgb(0, 102, 255);
+    border-top:10px double palevioletred;
+    border-right: 13.5px dotted palegreen;
+    border-bottom: 10px dashed yellow;
+    border-left: 10px solid plum;
+    font-size: 1rem;
+    margin: 1.5em;
+    padding: 1.5em;
+    outline: 10px solid purple;
+    outline-offset:-25px;
+   /*  margin-top: 1.5em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    margin-left: 2em; */
+}
+.circle{
+    margin: 3rem auto;
+    background-color: gold;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    outline: 2px solid red;
+    outline-offset: 0.25rem;
+}
