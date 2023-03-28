@@ -1,38 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body{
+body {
     padding: 10%;
-    font-size: 20px;
-    color: rgb(0, 0, 139);
-/*     font-family: 'Courier New', Courier, monospace;
- */
-/*     font-family: Verdana, Geneva, Tahoma, sans-serif;
- */
-/*     font-family: 'Times New Roman', Times, serif;
- */
-    font-family: 'Roboto',sans-serif;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
 }
-/* input,button{
-    font:inherit;
-    color: inherit;
-} */
-
-p{
-/*     text-decoration: underline;
-       text-decoration: overline;
-       text-decoration: line-through;*/ 
-      /*  text-decoration: none;
-       text-transform: lowercase;
-       text-align: justify; */
-/*        text-indent: 2em;
- */
-        line-height: 1.5;
-       /*  letter-spacing: 0.1em;
-        word-spacing: 0.1em; */
-        font-weight: normal;
-        font-style: normal;
-
-
-
+a{
+    text-decoration: underline;
+    cursor:pointer;
+    color: hsl(207, 44%, 49%);
 
 }
+main{
+    opacity: 0.4;
+}
+a:visited{
+    color: palevioletred;
+}
+a:hover, a:focus {
+    color: hsl(189, 44%, 49%,0.8);
+    background: gold;
+/*     opacity: 0.8;
+ */}
+a:active{
+    color: lightgreen;
+}
+/* specificity matters here. since the pseudo classes have same specificity you have to have them in correct order */
