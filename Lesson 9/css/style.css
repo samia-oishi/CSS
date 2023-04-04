@@ -1,33 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
-body {
-  padding: 5% 10%;
-  font-size: 1em;
-  font-family: "Roboto", sans-serif;
-}
-ol{
-    list-style-type: lower-alpha;
+*{
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0.5rem;
+    font-family: "Roboto","sans-serif";
+    text-align: center;
+}
+nav{
+    border: 2px solid #333;
+    border-radius: 2rem;
+    margin: 0 auto 1rem ;
+    max-width: 600px;
+    font-size: 2rem;
+    line-height: 4rem;
+}
+h2{
+    padding: 1rem;
+    background-color: palevioletred;
+    border-radius: 2rem 2rem 0 0;
 }
 ul{
-    list-style-type: square;
-    text-align: center;
-    list-style-position: outside;
-    color: blue;
-    line-height: 1.6;
-/*     list-style-image: url('../images/checkmark.png');
- */
-   /*  list-style: square url('../images/checkmark.png'); */
-    /* here square is the fall back if the img doesnt load */
-    list-style-position: inside;
+    list-style-type: none;
 }
-
-ul li:nth-child(even){
-    color: red;
+li{
+    border-color: 1px solid #333;
 }
-ul ::marker{
-    color: red;
-    font-family: fantasy;
-    font-size: 1em;
-    content:"Only $5>>  ";
+li a{
+    display: block;
+}
+li a, li a:visited{
+    text-decoration: none;
+    color: #333;
+}
+li a:hover, li a:focus{
+    background: #333;
+    color: palevioletred;
+    cursor: pointer;
+}
+li:last-child a{
+    border-radius: 0 0 2rem 2rem;
 }
